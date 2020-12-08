@@ -1,0 +1,13 @@
+li{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+li a{
+    font-size: larger!important;
+    font-weight: 600;
+    color: white!important;
+}
+li a:hover{
+    
+    background-color: #f95b4d;
+}
