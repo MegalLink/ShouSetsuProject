@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import {HttpClientModule} from '@angular/common/http'
+import { AdminAuthService } from './services/admin-auth.service';
+import { NovelasService } from './services/novelas.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,9 +16,9 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,HttpClientModule
   ],
-  providers: [],
+  providers: [AdminAuthService,NovelasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
